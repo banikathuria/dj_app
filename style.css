@@ -1,0 +1,39 @@
+body{
+    background-image:url("background.jpg");
+    background-size: cover;
+}
+#title{
+    width: 100%;
+    margin-top: 0;
+    font-size:x-large;
+}
+#note{
+    color: black;
+    font-size: small;
+}
+#div_speed img{
+    width: 200px;
+}
+#div_speed{
+    float:left;
+}
+#div_volume img{
+    width: 200px;
+}
+#div_volume{
+    float:right;
+}
+#play_sound{
+    font-size: 25px;
+}
+#stop_sound{
+    font-size: 25px;
+    margin-left: 30px;
+}
+canvas{
+    border-color: rgb(255, 255, 255);
+    border-width: 20px;
+    border-style: solid;
+    border-radius: 20px;
+    box-shadow: 20px 20px 10px lightblue ;
+}
