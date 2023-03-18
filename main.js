@@ -23,6 +23,28 @@ removedecimal=floor(leftwristy_no)
 volume=removedecimal/500
 song.setVolume(volume)
 document.getElementById("sound_volume").innerHTML= "Volume="+volume 
+fill("red")
+circle(rightwristx,rightwristy,20)
+if(rightwristy>0 && rightwristy<=100){
+    song.rate(0.5)
+    document.getElementById("sound_speed").innerHTML="Speed= 0.5x"
+    }
+    else if(rightwristy>100 && rightwristy<=200){
+        song.rate(1.0)
+        document.getElementById("sound_speed").innerHTML="Speed= 1.0x"
+}
+else if(rightwristy>200 && rightwristy<=300){
+    song.rate(1.5)
+    document.getElementById("sound_speed").innerHTML="Speed= 1.5x"
+}
+if(rightwristy>300 && rightwristy<=400){
+    song.rate(2.0)
+    document.getElementById("sound_speed").innerHTML="Speed= 2.0x"
+}
+if(rightwristy>400 && rightwristy<=500){
+    song.rate(2.5)
+    document.getElementById("sound_speed").innerHTML="Speed= 2.5x"
+}
 }
 function start(){
     song.play()
